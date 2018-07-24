@@ -4,3 +4,13 @@ applications:
   instances: 1
   domain: mybluemix.net
   disk_quota: 1024M
+services:
+- lightblue-cloudant
+applications:
+- path: build/libs/lightblue-customer-0.0.1.jar
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  disk_quota: 1024M
+  services:
+- lightblue-cloudant
